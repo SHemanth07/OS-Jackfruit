@@ -106,33 +106,29 @@ sudo dmesg | tail -5
 ## 3. Demo Screenshots
 
 ### Screenshot 1 — Multi-Container Supervision
-Shows two containers (alpha, beta) running under one supervisor process. Terminal 1 shows `[supervisor] started container 'alpha'` and `[supervisor] started container 'beta'` with their respective host PIDs.
+![Demo 1](screenshots/1.jpeg)
 
 ### Screenshot 2 — Metadata Tracking
-Shows `ps aux | grep engine` output with the supervisor process and container processes visible, confirming the supervisor stays alive while containers run.
+![Demo 2](screenshots/2.jpeg)
 
 ### Screenshot 3 — Bounded-Buffer Logging
-Shows `ls logs/` listing `alpha.log` and `cat logs/alpha.log` displaying captured container output (filesystem listing from `/bin/ls` inside Alpine rootfs), proving the bounded-buffer pipeline works.
+![Demo 3](screenshots/3.jpeg)
 
 ### Screenshot 4 — CLI and IPC
-Shows `sudo ./engine start alpha ./rootfs /bin/ls` in Terminal 2 sending a command to the running supervisor in Terminal 1 via the UNIX domain socket at `/tmp/mini_runtime.sock`, with the supervisor responding `container 'alpha' started`.
+![Demo 4](screenshots/4.jpeg)
 
 ### Screenshot 5 — Kernel Module Loaded
-Shows `sudo insmod monitor.ko`, `ls /dev/container_monitor`, and `sudo dmesg | tail -5` confirming the device `/dev/container_monitor` was created and the module loaded successfully.
+![Demo 5](screenshots/5.jpeg)
 
 ### Screenshot 6 — Container Registration and Monitoring
-Shows `dmesg` output with:
-- `[container_monitor] Module loaded. Device: /dev/container_monitor`
-- `[container_monitor] Registering container=alpha pid=2739 soft=41943040 hard=67108864`
-- `[container_monitor] container=alpha pid=2739 exited, removing`
+![Demo 6](screenshots/6.jpeg)
 
 ### Screenshot 7 — Scheduling Experiment
-Shows `cat logs/cpuwork.log` with `cpu_hog alive elapsed=1..8 done duration=10` and `cat logs/iowork.log` with `io_pulse wrote iteration=1..20`, demonstrating CPU-bound and I/O-bound workloads running concurrently inside containers.
+![Demo 7.1](screenshots/7.1.jpeg)
+![Demo 7.2](screenshots/7.2.jpeg)
 
 ### Screenshot 8 — Clean Teardown
-Shows `[supervisor] shutting down...` and `[supervisor] exited cleanly.` in Terminal 1, with no zombie processes in `ps aux | grep defunct`.
-
----
+![Demo 8](screenshots/8.jpeg)
 
 ## 4. Engineering Analysis
 
