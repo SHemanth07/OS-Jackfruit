@@ -4,7 +4,7 @@
 
 | Name | SRN |
 |------|-----|
-| Prithivi Aithal | PES1UG24CS909 |
+| Prithvi Aithal | PES1UG24CS909 |
 | S. Hemanth Kumar | PES1UG24CS418 |
 
 ---
