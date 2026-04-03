@@ -106,29 +106,29 @@ sudo dmesg | tail -5
 ## 3. Demo Screenshots
 
 ### Screenshot 1 — Multi-Container Supervision
-![Demo 1](screenshots/1.jpeg)
+![Demo 1](1.jpeg)
 
 ### Screenshot 2 — Metadata Tracking
-![Demo 2](screenshots/2.jpeg)
+![Demo 2](2.jpeg)
 
 ### Screenshot 3 — Bounded-Buffer Logging
-![Demo 3](screenshots/3.jpeg)
+![Demo 3](3.jpeg)
 
 ### Screenshot 4 — CLI and IPC
-![Demo 4](screenshots/4.jpeg)
+![Demo 4](4.jpeg)
 
 ### Screenshot 5 — Kernel Module Loaded
-![Demo 5](screenshots/5.jpeg)
+![Demo 5](5.jpeg)
 
 ### Screenshot 6 — Container Registration and Monitoring
-![Demo 6](screenshots/6.jpeg)
+![Demo 6](6.jpeg)
 
 ### Screenshot 7 — Scheduling Experiment
-![Demo 7.1](screenshots/7.1.jpeg)
-![Demo 7.2](screenshots/7.2.jpeg)
+![Demo 7.1](7.1.jpeg)
+![Demo 7.2](7.2.jpeg)
 
 ### Screenshot 8 — Clean Teardown
-![Demo 8](screenshots/8.jpeg)
+![Demo 8](8.jpeg)
 
 ## 4. Engineering Analysis
 
